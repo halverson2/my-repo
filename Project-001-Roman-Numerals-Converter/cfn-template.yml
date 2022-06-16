@@ -28,8 +28,8 @@ Resources:
   rSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupDescription: 'Altaz Roman Numerals Allow SSH and HTTP' # Required
-      GroupName: 'Altaz Roman Numerals Allow SSH and HTTP'
+      GroupDescription: 'Torrey Roman Numerals Allow SSH and HTTP' # Required
+      GroupName: 'Torrey Roman Numerals Allow SSH and HTTP'
       SecurityGroupIngress:
       - 
         IpProtocol: tcp
@@ -60,7 +60,7 @@ Resources:
         yum install python3 -y
         pip3 install flask
         cd /home/ec2-user
-        FOLDER='https://raw.githubusercontent.com/altazbhanji/my-repository/main/Project-001-Roman-Numerals-Converter'
+        FOLDER='https://raw.githubusercontent.com/halverson2/my-repo/main/Project-001-Roman-Numerals-Converter'
         wget ${FOLDER}/app.py
         mkdir templates && cd templates
         wget ${FOLDER}/templates/index.html
